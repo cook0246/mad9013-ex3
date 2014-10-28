@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -- Baseline Elements --*/
+body{ 
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  line-height: 1.5;
+}
+h1{
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  text-align: center;
+    
+}
+.wrapper{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* ----------- Grid --------- */
+/* -------------------------- */
+.col-container{
+  margin: 1rem auto;
+}
+
+/* -- Footer -- */
+.footer{
+  clear: both;
+  background: #111;
+  text-align: center;
+  color: #fff;
+    padding: 10px 0;
+}
+
+
+/* --Column Styles --*/
+img{
+    margin: 0;
+    padding: 10px;
+    float: left;
+}
+
+/* 1 Column */
+@media screen and (max-width: 600px){
+    img { width: 100%;}
+    h1{font-size: 2rem;}
+}
+/* 2 Columns */
+@media screen and (min-width: 600px) and (max-width: 1019px){
+    img { width: 50%;}
+    h1{font-size: 3rem;}
+}
+/* 3 Columns */
+@media screen and (min-width: 1020px){
+    img { width: 33.3%;}
+    h1{font-size: 4rem;}
+}
+
+
